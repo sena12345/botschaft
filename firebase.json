@@ -4,6 +4,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
+    "target": "botschaft",
     "public": "dist/botschaft",
     "ignore": [
       "firebase.json",
