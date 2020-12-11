@@ -1,1 +1,67 @@
-<p>login works!</p>
+<div class="container">
+   <div class="parent-pannel">
+
+      <form class="form-login" #userLoginForm="ngForm" (ngSubmit)="login(userLoginForm)">
+
+        <div class="login-img">
+            
+             <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" fill="#309BE5" width="72px" height="72px">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+        </svg>
+        
+        </div>
+
+    <div class="form-row">
+
+      <div class="form-group col-md-12">
+        <label for="email"><b>Username</b></label>
+        <input class="form-control" type="email" placeholder="Enter Email" name="email" ngModel 
+          required>
+      </div>
+      <div class="form-group col-md-12">
+        <label for="password"><b>Password</b></label>
+        <input class="form-control" type="password" placeholder="Enter Password" name="password" ngModel
+       required>
+
+      </div>
+
+      <div class="col-md-12">
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+     
+
+    </div>
+    <div class="form-row">
+     
+      <div class="col-md-12">
+            <input type="submit" class="form-control btn btn-sm btn-info" value="Login">
+      
+        </div>
+    </div>
+
+    <div class="form-row">
+      
+
+      <div class="col-md-6">
+        <b> <a data-toggle="tooltip" title="register" href="/sign_up">Signup</a></b>
+
+      </div>
+
+      <div class="col-md-6">
+        <b><a data-toggle="tooltip" title="reset passwod!" href="/reset_password">forgot password?</a> </b>
+      </div>
+
+    </div>
+
+
+  </form>
+
+ </div> 
+
+</div>
